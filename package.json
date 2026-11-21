@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "author": "Sahil Yadav",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

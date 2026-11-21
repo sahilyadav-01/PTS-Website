@@ -42,6 +42,9 @@ export default function Footer() {
             <span className="px-2 py-1 rounded bg-surface-container border border-outline-variant">IPC-A-610 CLASS 3</span>
             <span className="px-2 py-1 rounded bg-surface-container border border-outline-variant">AASHTO R32</span>
           </div>
+          <div className="text-xs font-mono text-primary-container font-semibold pt-1">
+            Author & Lead Engineer: Sahil Yadav
+          </div>
         </div>
 
         {/* Fleet Systems */}
@@ -77,16 +80,18 @@ export default function Footer() {
       </div>
 
       {/* Copyright Bottom Bar */}
-      <div className="w-full bg-surface-container px-4 sm:px-gutter-lg py-4 border-t border-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant">
+      <div className="w-full bg-surface-container px-4 sm:px-gutter-lg py-4 border-t border-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-on-surface-variant">
         <div>
-          © 2026 Perfect Tech Solutions (PTS). Heavy Civil Diagnostic & Telemetry Systems. All rights reserved.
+          Copyright © 2026 <strong className="text-primary font-semibold">Sahil Yadav</strong>. All rights reserved. • Perfect Tech Solutions (PTS)
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
+          <Link to="/privacy" className="hover:text-primary transition-colors font-medium">Privacy Policy</Link>
+          <span>•</span>
+          <Link to="/terms" className="hover:text-primary transition-colors font-medium">Terms of Service</Link>
+          <span>•</span>
           <Link to="/about" className="hover:text-primary transition-colors">Compliance</Link>
           <span>•</span>
           <Link to="/contact" className="hover:text-primary transition-colors">Technical Support</Link>
-          <span>•</span>
-          <Link to="/services" className="hover:text-primary transition-colors">SLA Directory</Link>
         </div>
       </div>
     </footer>

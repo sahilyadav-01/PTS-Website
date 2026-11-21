@@ -147,6 +147,21 @@ The user interface uses a clean, industrial instrumentation aesthetic:
 
 ---
 
+## 🔒 Legal, Privacy & Terms
+
+- **Privacy Policy:** Comprehensive telemetry and client data governance available at [`/privacy`](file:///c:/Users/BABA%20TILLU/Desktop/PTS%20Website/src/pages/Privacy.jsx).
+- **Terms of Service:** Engineering SLAs, calibration liability, and repair warranty terms available at [`/terms`](file:///c:/Users/BABA%20TILLU/Desktop/PTS%20Website/src/pages/Terms.jsx).
+
+---
+
+## 👤 Author & Copyright
+
+- **Author:** Sahil Yadav
+- **Copyright:** Copyright © 2026 Sahil Yadav. All rights reserved.
+- **Organization:** Perfect Tech Solutions (PTS)
+
+---
+
 ## 🚢 Deployment
 
 The project builds standard static assets in `/dist` and can be deployed directly to any static host:
@@ -159,4 +174,4 @@ npm run build
 
 ---
 
-© 2026 Perfect Tech Solutions (PTS). All rights reserved.
+Copyright © 2026 **Sahil Yadav**. All rights reserved. • Perfect Tech Solutions (PTS)

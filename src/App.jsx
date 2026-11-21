@@ -16,6 +16,8 @@ import SoftwareAndData from './pages/SoftwareAndData';
 import HardwareSolutions from './pages/HardwareSolutions';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -59,6 +61,12 @@ export default function App() {
 
           <Route path="/contact" element={<Contact onTicketCreated={setActiveTicket} />} />
           <Route path="/contact.html" element={<Contact onTicketCreated={setActiveTicket} />} />
+
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/privacy.html" element={<Privacy />} />
+
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/terms.html" element={<Terms />} />
 
           {/* Catch-all */}
           <Route path="*" element={<Home onOpenSpec={setActiveSpecKey} onTicketCreated={setActiveTicket} />} />
