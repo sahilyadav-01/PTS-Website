@@ -1,10 +1,14 @@
 # Perfect Tech Solutions (PTS) — Enterprise Web Platform
 
+[![Live Demo](https://img.shields.io/badge/Production%20Deployment-Live%20on%20Vercel-000000.svg?logo=vercel&logoColor=white)](https://perfect-tech-solutions-private-limi.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg?logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-5.4-purple.svg?logo=vite)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.1.0-purple.svg?logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com/)
+[![React Router](https://img.shields.io/badge/React_Router-6.22-CA4245.svg?logo=react-router)](https://reactrouter.com/)
 [![ISO/IEC 17025](https://img.shields.io/badge/Calibration-ISO%2FIEC_17025-green.svg)](#standards--certifications)
 [![IPC-A-610](https://img.shields.io/badge/PCB_Lab-IPC--A--610_Class_3-orange.svg)](#standards--certifications)
+
+> 🌐 **Live Production URL:** [Perfect Tech Solutions (PTS) | Infrastructure Survey & Inspection Systems Engineering](https://perfect-tech-solutions-private-limi.vercel.app/)
 
 Modern, high-performance web platform for **Perfect Tech Solutions (PTS)** — specialized technical engineering partner for heavy civil diagnostic, telemetry instrumentation, and pavement survey systems.
 
@@ -13,7 +17,7 @@ Modern, high-performance web platform for **Perfect Tech Solutions (PTS)** — s
 ## 🚀 Quick Start
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- [Node.js](https://nodejs.org/) (`v18.0.0` or higher recommended)
 - `npm` or `pnpm`
 
 ### Installation & Development
@@ -30,14 +34,24 @@ npm run dev
 ```
 Open **[http://localhost:3000](http://localhost:3000)** in your browser. Instant Hot Module Replacement (HMR) is active.
 
-### Production Build
+### Production Build & Preview
 ```bash
 # Generate optimized static bundle in /dist
 npm run build
 
-# Preview production build locally
+# Preview production build locally on http://localhost:3000
 npm run preview
 ```
+
+---
+
+## 📜 Available NPM Scripts
+
+| Script | Command | Purpose |
+| :--- | :--- | :--- |
+| `dev` | `vite` | Starts the Vite development server at `http://localhost:3000` with HMR |
+| `build` | `vite build` | Compiles and tree-shakes production assets into `/dist` |
+| `preview` | `vite preview` | Serves the production build locally for verification |
 
 ---
 
@@ -60,15 +74,38 @@ The platform incorporates specialized browser-based calculation and simulation u
 1. **Live Telemetry & UTC Clock:**
    - Real-time UTC clock and network latency jitter simulation embedded in the header bar and telemetry breadcrumb.
 2. **Deflection Basin & Moduli Simulator:**
-   - Dynamic SVG curve modeling AASHTO dynamic impulse deflection across geophone radial offsets (0mm to 1200mm).
-   - Real-time recalculation of estimated subgrade elastic modulus ($E_{sub}$) from interactive load (30–120 kN) and asphalt temperature (10–50°C) sliders.
+   - Dynamic SVG curve modeling AASHTO dynamic impulse deflection across geophone radial offsets ($0\text{ mm}$ to $1200\text{ mm}$).
+   - Real-time recalculation of estimated subgrade elastic modulus ($E_{\text{sub}}$) from interactive load (30–120 kN) and asphalt temperature (10–50°C) sliders.
 3. **MIL-Spec Harness Configurator:**
    - Interactive specification builder for sensor harnesses (connector series, pin count, environmental jacketing).
    - Instant part-number SKU generation with one-click clipboard copy.
 4. **Command Palette (`Ctrl+K`):**
    - Global search dialog providing instant keyboard-driven navigation across fleet divisions, tools, standards, and contact portals.
-5. **24/7 Field Support Dispatch Console:**
-   - Tier-3 diagnostic dispatch form with priority triage, SLA response confirmation, and printable ticket generation.
+5. **Technical Specification Modal:**
+   - Detailed modal viewer for system specifications across NSV, FWD, MBIU, and calibration rigs with direct print/save capabilities.
+6. **24/7 Field Support Dispatch Console:**
+   - Tier-3 diagnostic dispatch form with priority triage, SLA response confirmation, and printable ticket generation dialog.
+
+---
+
+## 🗺️ Application Routing & Views
+
+The application utilizes **React Router v6** supporting both canonical clean routes and legacy `.html` links for backwards compatibility:
+
+| Route Path | Associated Component | Description |
+| :--- | :--- | :--- |
+| `/` or `/index.html` | `src/pages/Home.jsx` | Executive HUD, fleet highlights, deflection simulator, harness tool, FAQ |
+| `/about` or `/about.html` | `src/pages/About.jsx` | ISO/IEC 17025 accreditation, lab history, credentials, facility overview |
+| `/services` or `/services.html` | `src/pages/Services.jsx` | Comprehensive directory of all 5 specialized fleet divisions & SLAs |
+| `/nsv` or `/nsv.html` | `src/pages/NSV.jsx` | Network Survey Vehicles (lasers, high-speed profilometry, DGPS/IMU) |
+| `/fwd` or `/fwd.html` | `src/pages/FWD.jsx` | Falling Weight Deflectometers (impulse load cells, geophone arrays) |
+| `/mbiu` or `/mbiu.html` | `src/pages/MBIU.jsx` | Mobile Bridge Inspection Units (SIL-3 interlocks, hydraulic spooling) |
+| `/software-and-data` or `.html` | `src/pages/SoftwareAndData.jsx` | Civil survey data workflows (IRI calculation, ELMOD back-calc, GIS) |
+| `/hardware-solutions` or `.html` | `src/pages/HardwareSolutions.jsx` | PCB Lab & cabling (IPC-A-610 Class 3 SMD micro-soldering, MIL-DTL) |
+| `/projects` or `/projects.html` | `src/pages/Projects.jsx` | Real-world infrastructure case studies (highways, runways, bridges) |
+| `/contact` or `/contact.html` | `src/pages/Contact.jsx` | 24/7 technical dispatch portal & ticket submission console |
+| `/privacy` or `/privacy.html` | `src/pages/Privacy.jsx` | Telemetry data governance, telemetry privacy, and client confidentiality |
+| `/terms` or `/terms.html` | `src/pages/Terms.jsx` | Engineering SLAs, calibration liability, and repair warranty terms |
 
 ---
 
@@ -107,7 +144,9 @@ PTS-Website/
 │   │   ├── SoftwareAndData.jsx   # Civil survey data processing workflows page
 │   │   ├── HardwareSolutions.jsx # Cabling & PCB micro-soldering laboratory page
 │   │   ├── Projects.jsx          # Real-world infrastructure case studies
-│   │   └── Contact.jsx           # 24/7 technical dispatch portal & ticket submission
+│   │   ├── Contact.jsx           # 24/7 technical dispatch portal & ticket submission
+│   │   ├── Privacy.jsx           # Telemetry data governance & privacy policy
+│   │   └── Terms.jsx             # Engineering SLAs & calibration terms of service
 │   ├── App.jsx                   # React Router v6 setup (supports clean and .html URLs)
 │   ├── index.css                 # Tailwind directives, Material Symbols & custom scrollbars
 │   └── main.jsx                  # React DOM mount point
@@ -149,8 +188,8 @@ The user interface uses a clean, industrial instrumentation aesthetic:
 
 ## 🔒 Legal, Privacy & Terms
 
-- **Privacy Policy:** Comprehensive telemetry and client data governance available at [`/privacy`](file:///c:/Users/BABA%20TILLU/Desktop/PTS%20Website/src/pages/Privacy.jsx).
-- **Terms of Service:** Engineering SLAs, calibration liability, and repair warranty terms available at [`/terms`](file:///c:/Users/BABA%20TILLU/Desktop/PTS%20Website/src/pages/Terms.jsx).
+- **Privacy Policy:** Comprehensive telemetry and client data governance available at [`src/pages/Privacy.jsx`](src/pages/Privacy.jsx) or `/privacy`.
+- **Terms of Service:** Engineering SLAs, calibration liability, and repair warranty terms available at [`src/pages/Terms.jsx`](src/pages/Terms.jsx) or `/terms`.
 
 ---
 
@@ -164,12 +203,15 @@ The user interface uses a clean, industrial instrumentation aesthetic:
 
 ## 🚢 Deployment
 
-The project builds standard static assets in `/dist` and can be deployed directly to any static host:
+The production application is continuously deployed on **Vercel**:
+- **Live URL:** [https://perfect-tech-solutions-private-limi.vercel.app/](https://perfect-tech-solutions-private-limi.vercel.app/)
 
-### GitHub Pages / Netlify / Vercel
+The project builds standard static assets in `/dist` and can be deployed directly to any static host (Vercel, GitHub Pages, Netlify, Cloudflare Pages):
+
+### Build Command
 ```bash
+# Generate production bundle in /dist
 npm run build
-# Deploy the contents of the /dist directory
 ```
 
 ---
