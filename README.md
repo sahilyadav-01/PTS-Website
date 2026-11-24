@@ -8,9 +8,27 @@
 [![ISO/IEC 17025](https://img.shields.io/badge/Calibration-ISO%2FIEC_17025-green.svg)](#standards--certifications)
 [![IPC-A-610](https://img.shields.io/badge/PCB_Lab-IPC--A--610_Class_3-orange.svg)](#standards--certifications)
 
-> 🌐 **Live Production URL:** [Perfect Tech Solutions (PTS) | Infrastructure Survey & Inspection Systems Engineering](https://perfect-tech-solutions-private-limi.vercel.app/)
+> 🌐 **Live Production URL:** [https://perfect-tech-solutions-private-limi.vercel.app/](https://perfect-tech-solutions-private-limi.vercel.app/)
 
 Modern, high-performance web platform for **Perfect Tech Solutions (PTS)** — specialized technical engineering partner for heavy civil diagnostic, telemetry instrumentation, and pavement survey systems.
+
+---
+
+## 📑 Table of Contents
+
+- [🚀 Quick Start](#-quick-start)
+- [📜 Available NPM Scripts](#-available-npm-scripts)
+- [🌟 Core Fleet Divisions & Capabilities](#-core-fleet-divisions--capabilities)
+- [🛠️ Interactive Field Engineering Utilities](#️-interactive-field-engineering-utilities)
+- [🗺️ Application Routing & Views](#️-application-routing--views)
+- [📁 Project Architecture](#-project-architecture)
+- [🎨 Design System & Color Palette](#-design-system--color-palette)
+- [⚡ Tech Stack & Libraries](#-tech-stack--libraries)
+- [📜 Standards & Certifications](#-standards--certifications)
+- [🚨 Field Support & Emergency Dispatch](#-field-support--emergency-dispatch)
+- [🔒 Legal, Privacy & Terms](#-legal-privacy--terms)
+- [🚢 Deployment & CI/CD](#-deployment--cicd)
+- [👤 Author & Copyright](#-author--copyright)
 
 ---
 
@@ -79,8 +97,8 @@ The platform incorporates specialized browser-based calculation and simulation u
 3. **MIL-Spec Harness Configurator:**
    - Interactive specification builder for sensor harnesses (connector series, pin count, environmental jacketing).
    - Instant part-number SKU generation with one-click clipboard copy.
-4. **Command Palette (`Ctrl+K`):**
-   - Global search dialog providing instant keyboard-driven navigation across fleet divisions, tools, standards, and contact portals.
+4. **Command Palette (`Ctrl+K` / `Cmd+K`):**
+   - Global keyboard-driven search dialog providing instant navigation across fleet divisions, tools, standards, and dispatch portals.
 5. **Technical Specification Modal:**
    - Detailed modal viewer for system specifications across NSV, FWD, MBIU, and calibration rigs with direct print/save capabilities.
 6. **24/7 Field Support Dispatch Console:**
@@ -175,6 +193,17 @@ The user interface uses a clean, industrial instrumentation aesthetic:
 
 ---
 
+## ⚡ Tech Stack & Libraries
+
+- **Framework:** [React 18.2](https://react.dev/)
+- **Routing:** [React Router v6.22](https://reactrouter.com/)
+- **Build Tool:** [Vite 5.1](https://vitejs.dev/) with Fast HMR
+- **Styling:** [Tailwind CSS 3.4](https://tailwindcss.com/) with PostCSS & Autoprefixer
+- **Icons & Typography:** Google Material Symbols Outlined, Inter, and JetBrains Mono
+- **Deployment Platform:** [Vercel](https://vercel.com/) with automated Git CI/CD
+
+---
+
 ## 📜 Standards & Certifications
 
 - **ISO/IEC 17025:2017:** General requirements for the competence of testing and calibration laboratories.
@@ -186,6 +215,22 @@ The user interface uses a clean, industrial instrumentation aesthetic:
 
 ---
 
+## 🚨 Field Support & Emergency Dispatch
+
+PTS operates a 24/7/365 active dispatch network with regional hubs across key corridors:
+
+| Triage Level | Priority | SLA Response Time | Mobilization |
+| :--- | :--- | :--- | :--- |
+| **Priority 1 (Emergency Dispatch)** | High / Critical | < 4 Hours Engineering Callback | 24–48 Hours On-Site Deployment |
+| **Priority 2 (Calibration Queue)** | Standard | < 24 Hours Diagnostic Review | Scheduled Lab Intake / Field Visit |
+
+- **Emergency Dispatch Desk (Toll Free):** `+1 (800) PTS-TECH` / `+1 (800) 555-0787`
+- **Field Telemetry Direct Hotline:** `+1 (555) 019-8472`
+- **Engineering Telemetry Inquiries:** `dispatch@pts-instruments.com`
+- **Central Lab:** PTS Advanced Technology Center, Industrial Corridor, Hub-04
+
+---
+
 ## 🔒 Legal, Privacy & Terms
 
 - **Privacy Policy:** Comprehensive telemetry and client data governance available at [`src/pages/Privacy.jsx`](src/pages/Privacy.jsx) or `/privacy`.
@@ -193,26 +238,26 @@ The user interface uses a clean, industrial instrumentation aesthetic:
 
 ---
 
-## 👤 Author & Copyright
-
-- **Author:** Sahil Yadav
-- **Copyright:** Copyright © 2026 Sahil Yadav. All rights reserved.
-- **Organization:** Perfect Tech Solutions (PTS)
-
----
-
-## 🚢 Deployment
+## 🚢 Deployment & CI/CD
 
 The production application is continuously deployed on **Vercel**:
 - **Live URL:** [https://perfect-tech-solutions-private-limi.vercel.app/](https://perfect-tech-solutions-private-limi.vercel.app/)
 
-The project builds standard static assets in `/dist` and can be deployed directly to any static host (Vercel, GitHub Pages, Netlify, Cloudflare Pages):
+The project compiles standard static assets in `/dist` and can be deployed directly to any static host (Vercel, Netlify, GitHub Pages, Cloudflare Pages):
 
 ### Build Command
 ```bash
 # Generate production bundle in /dist
 npm run build
 ```
+
+---
+
+## 👤 Author & Copyright
+
+- **Author & Lead Engineer:** Sahil Yadav
+- **Copyright:** Copyright © 2026 Sahil Yadav. All rights reserved.
+- **Organization:** Perfect Tech Solutions (PTS)
 
 ---
 
